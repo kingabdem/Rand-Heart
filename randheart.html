@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .heart{
+            font-size: 30px;
+            animation: fall 1 linear forwards;
+            position: fixed;
+        }
+        @keyframes fall {
+            0%{
+                transform: translateY(-5vh);
+            }
+            100%{
+                transform: translateY(110vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container_heart"></div>
+    <input type="button" id="rand-me" value="Rand me" class="btn btn-dark" style="margin: 30px 45% auto 45%;">
+    <script src="randheart.js"></script>
+</body>
+</html>
